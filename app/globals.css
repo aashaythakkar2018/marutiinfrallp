@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Brand Colors */
+  --color-navy: #1A3A5C;
+  --color-steel: #3A7CA5;
+  --color-orange: #FF6B35;
+  --color-orange-dark: #E65A2C;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Text Colors */
+  --color-text-primary: #2C3E50;
+  --color-text-secondary: #4A5568;
+  --color-text-tertiary: #718096;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Background Colors */
+  --color-bg-white: #FFFFFF;
+  --color-bg-off-white: #F7FAFC;
+  --color-bg-light: #E2E8F0;
+
+  /* Legacy theme variables mapping for backward compatibility if needed, 
+     but primary usage should be the new variables above */
+  --color-dark-bg: var(--color-navy);
+  --color-ivory-bg: var(--color-bg-off-white);
+  --color-card-dark: #152C45;
+  /* Darker shade of navy for cards in dark mode */
+  --color-card-light: var(--color-bg-white);
+  --color-primary: var(--color-navy);
+  --color-secondary: var(--color-orange);
+  --color-accent: var(--color-steel);
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Bebas Neue', sans-serif;
+
+  /* Animations */
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee2: marquee2 40s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
+/* Base Styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  color: var(--color-navy);
+  font-weight: 700;
+  /* Bold */
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-dark {
+  background: rgba(26, 58, 92, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Animation Utilities */
+.animate-marquee {
+  animation: var(--animate-marquee);
+}
+
+.animate-marquee2 {
+  animation: var(--animate-marquee2);
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(to right, var(--color-navy), var(--color-steel));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
