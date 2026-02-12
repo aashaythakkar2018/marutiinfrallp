@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import { WorldMap } from '@/components/ui/world-map';
+import Image from 'next/image';
 
 export default function LocationMap() {
     return (
@@ -54,9 +55,12 @@ export default function LocationMap() {
                         className="absolute top-6 left-1/2 -translate-x-1/2 w-72 bg-white rounded-xl shadow-xl border border-slate-100 p-4 z-20 pointer-events-auto"
                     >
                         <div className="w-full h-24 bg-slate-100 rounded-lg mb-3 relative overflow-hidden group/card">
-                            <div className="absolute inset-0 bg-navy/5 flex items-center justify-center text-slate-400 text-xs">
-                                Factory Image
-                            </div>
+                            <Image
+                                src="/images/factory-location.png"
+                                alt="Factory Location - Surat, Gujarat"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                         <h4 className="font-bold text-navy text-lg mb-1">Surat, Gujarat</h4>
                         <p className="text-sm text-slate-500 font-medium mb-3">Headquarters & Manufacturing</p>
