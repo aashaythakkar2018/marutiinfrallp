@@ -35,24 +35,31 @@ function StackedCircularFooter() {
                     </nav>
 
                     {/* Socials */}
-                    {/* Socials */}
                     <div className="mb-8 flex space-x-4">
-                        <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
-                            <Facebook className="h-5 w-5" />
-                            <span className="sr-only">Facebook</span>
-                        </Button>
-                        <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
-                            <Instagram className="h-5 w-5" />
-                            <span className="sr-only">Instagram</span>
-                        </Button>
-                        <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
-                            <Linkedin className="h-5 w-5" />
-                            <span className="sr-only">LinkedIn</span>
-                        </Button>
-                        <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
-                            <Youtube className="h-5 w-5" />
-                            <span className="sr-only">Youtube</span>
-                        </Button>
+                        <Link href="https://www.facebook.com/marutinfraeng/" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
+                                <Facebook className="h-5 w-5" />
+                                <span className="sr-only">Facebook</span>
+                            </Button>
+                        </Link>
+                        <Link href="https://www.instagram.com/maruti_infraengllp" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
+                                <Instagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
+                            </Button>
+                        </Link>
+                        <Link href="https://www.linkedin.com/company/106003480/admin/dashboard/" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
+                                <Linkedin className="h-5 w-5" />
+                                <span className="sr-only">LinkedIn</span>
+                            </Button>
+                        </Link>
+                        <Link href="https://www.youtube.com/@marutinfraindia" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" size="icon" className="rounded-full border-slate-200 text-slate-600 hover:bg-orange/10 hover:text-orange hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] transition-all duration-300">
+                                <Youtube className="h-5 w-5" />
+                                <span className="sr-only">Youtube</span>
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Contact Info (Adhering to "keep all data as it is") */}
