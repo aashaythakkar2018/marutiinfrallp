@@ -7,13 +7,13 @@ import Image from 'next/image';
 
 const team = [
     {
-        name: "Founder Name",
+        name: "Sanjay Vaghasiya",
         role: "Founder & CEO",
         image: "/images/FOUNDER.jpeg",
         quote: "Building with integrity."
     },
     {
-        name: "Director Name",
+        name: "Atulbhai Vaghasiya",
         role: "Director of Operations",
         image: "/images/DIRECTOR.jpeg",
         quote: "Excellence in every detail."
