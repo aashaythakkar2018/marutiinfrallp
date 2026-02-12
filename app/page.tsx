@@ -4,6 +4,7 @@ import ClientLogos from "@/components/ClientLogos";
 import ServiceCards from "@/components/ServiceCards";
 import ProcessFlow from "@/components/ProcessFlow";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,7 @@ export default function Home() {
       <ClientLogos />
       <ServiceCards />
       <ProcessFlow />
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden bg-[#1A3A5C]" style={{ backgroundColor: '#1A3A5C' }}>
