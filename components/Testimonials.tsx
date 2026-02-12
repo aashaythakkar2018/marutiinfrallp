@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
     {
         id: "testimonial-2",
         title: "Client Testimonial",
-        videoUrl: "https://www.youtube.com/embed/mO5nEafYwtY?si=hnZNT76bIs67BFND",
+        videoUrl: "https://www.youtube.com/embed/mO5nEafYwtY",
     }
 ]
 
