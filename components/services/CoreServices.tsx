@@ -1,57 +1,57 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Button } from "@/components/ui/button"; // Assuming Button component exists
 import Image from 'next/image';
 
-{
-    id: "01",
+const services = [
+    {
+        id: "01",
         title: "VISIONARY PLANNING SOLUTIONS",
-            description: "We design, manufacture, and supply Pre-Engineered Buildings tailored to your specifications. Our planning solutions ensure optimal space utilization, cost efficiency, and structural integrity from concept to completion.",
-                features: [
-                    { title: "Custom architectural designs", desc: "Tailored to meet specific client requirements and site conditions." },
-                    { title: "Advanced 3D modeling", desc: "Visualization before construction begins." },
-                    { title: "Cost optimization", desc: "Material efficiency and budget-friendly solutions." }
-                ],
-                    image: "/images/core-planning.jpg",
-                        imgPos: "left"
-},
-{
-    id: "02",
+        description: "We design, manufacture, and supply Pre-Engineered Buildings tailored to your specifications. Our planning solutions ensure optimal space utilization, cost efficiency, and structural integrity from concept to completion.",
+        features: [
+            { title: "Custom architectural designs", desc: "Tailored to meet specific client requirements and site conditions." },
+            { title: "Advanced 3D modeling", desc: "Visualization before construction begins." },
+            { title: "Cost optimization", desc: "Material efficiency and budget-friendly solutions." }
+        ],
+        image: "/images/core-planning.jpg",
+        imgPos: "left"
+    },
+    {
+        id: "02",
         title: "INGENIOUS STRUCTURAL DESIGN",
-            description: "Our expert engineers utilize cutting-edge software and international standards to create structurally robust and aesthetically pleasing buildings. From concept to final design, we ensure precision in every detail.",
-                features: [
-                    { title: "International standards", desc: "Compliance with IS codes, AISC, and Eurocode specifications." },
-                    { title: "Load optimization", desc: "Structural analysis for maximum efficiency and safety." },
-                    { title: "Material specification", desc: "High-grade steel selection for durability and performance." }
-                ],
-                    image: "/images/core-design.jpg",
-                        imgPos: "right"
-},
-{
-    id: "03",
+        description: "Our expert engineers utilize cutting-edge software and international standards to create structurally robust and aesthetically pleasing buildings. From concept to final design, we ensure precision in every detail.",
+        features: [
+            { title: "International standards", desc: "Compliance with IS codes, AISC, and Eurocode specifications." },
+            { title: "Load optimization", desc: "Structural analysis for maximum efficiency and safety." },
+            { title: "Material specification", desc: "High-grade steel selection for durability and performance." }
+        ],
+        image: "/images/core-design.jpg",
+        imgPos: "right"
+    },
+    {
+        id: "03",
         title: "PUNCTUAL STEEL STRUCTURE DELIVERY",
-            description: "We ensure timely delivery of fabricated steel structures to your project site. Our logistics network and quality control systems guarantee that every component arrives on schedule and in perfect condition.",
-                features: [
-                    { title: "Real-time tracking", desc: "Monitor your order from fabrication to delivery." },
-                    { title: "Quality inspection", desc: "Every component checked before dispatch." },
-                    { title: "Logistics coordination", desc: "Pan-India delivery network for timely arrival." }
-                ],
-                    image: "/images/core-delivery.jpg",
-                        imgPos: "left"
-},
-{
-    id: "04",
+        description: "We ensure timely delivery of fabricated steel structures to your project site. Our logistics network and quality control systems guarantee that every component arrives on schedule and in perfect condition.",
+        features: [
+            { title: "Real-time tracking", desc: "Monitor your order from fabrication to delivery." },
+            { title: "Quality inspection", desc: "Every component checked before dispatch." },
+            { title: "Logistics coordination", desc: "Pan-India delivery network for timely arrival." }
+        ],
+        image: "/images/core-delivery.jpg",
+        imgPos: "left"
+    },
+    {
+        id: "04",
         title: "PRECISION STEEL STRUCTURE ERECTION",
-            description: "Our experienced erection teams ensure safe and efficient on-site installation. With modern equipment and rigorous safety protocols, we bring your vision to life with precision and professionalism.",
-                features: [
-                    { title: "Expert installation teams", desc: "Trained professionals with extensive field experience." },
-                    { title: "Safety compliance", desc: "Adherence to all safety standards and protocols." },
-                    { title: "Quality assurance", desc: "Post-erection inspection and testing." }
-                ],
-                    image: "/images/core-erection.jpg",
-                        imgPos: "right"
-}
+        description: "Our experienced erection teams ensure safe and efficient on-site installation. With modern equipment and rigorous safety protocols, we bring your vision to life with precision and professionalism.",
+        features: [
+            { title: "Expert installation teams", desc: "Trained professionals with extensive field experience." },
+            { title: "Safety compliance", desc: "Adherence to all safety standards and protocols." },
+            { title: "Quality assurance", desc: "Post-erection inspection and testing." }
+        ],
+        image: "/images/core-erection.jpg",
+        imgPos: "right"
+    }
 ];
 
 export default function CoreServices() {
