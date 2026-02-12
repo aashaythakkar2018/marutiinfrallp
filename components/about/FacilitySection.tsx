@@ -2,6 +2,7 @@
 
 import { MapPin, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function FacilitySection() {
     return (
@@ -78,10 +79,13 @@ export default function FacilitySection() {
                         <div className="absolute bottom-8 left-8 z-20">
                             <p className="text-white font-bold text-xl">State-of-the-Art Machinery</p>
                         </div>
-                        {/* Placeholder for Facility Image */}
-                        <div className="absolute inset-0 bg-slate-800 flex items-center justify-center text-white/20 text-2xl font-bold">
-                            Facility Image
-                        </div>
+                        {/* Facility Aerial Image */}
+                        <Image
+                            src="/images/facility-aerial.jpg"
+                            alt="Maruti Infraeng LLP Facility - Aerial View"
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
                     </motion.div>
                 </div>
             </div>
