@@ -14,7 +14,7 @@ const services = [
             { title: "Advanced 3D modeling", desc: "Visualization before construction begins." },
             { title: "Cost optimization", desc: "Material efficiency and budget-friendly solutions." }
         ],
-        image: "/images/service-planning.png", // Generated
+        image: "/images/core-planning.jpg", // Updated
         imgPos: "left"
     },
     {
@@ -26,7 +26,7 @@ const services = [
             { title: "Load optimization", desc: "Structural analysis for maximum efficiency and safety." },
             { title: "Material specification", desc: "High-grade steel selection for durability and performance." }
         ],
-        image: "/images/service-design.png", // Generated
+        image: "/images/core-design.jpg", // Updated
         imgPos: "right"
     },
     {
@@ -38,7 +38,7 @@ const services = [
             { title: "Quality inspection", desc: "Every component checked before dispatch." },
             { title: "Logistics coordination", desc: "Pan-India delivery network for timely arrival." }
         ],
-        image: "/images/service-delivery.png", // Generated
+        image: "/images/core-delivery.jpg", // Updated
         imgPos: "left"
     },
     {
@@ -50,7 +50,7 @@ const services = [
             { title: "Safety compliance", desc: "Adherence to all safety standards and protocols." },
             { title: "Quality assurance", desc: "Post-erection inspection and testing." }
         ],
-        image: "/images/service-erection.png", // Generated
+        image: "/images/core-erection.jpg", // Updated
         imgPos: "right"
     }
 ];
