@@ -45,15 +45,6 @@ export default function AboutHero() {
                         </h1>
                     </motion.div>
 
-                    <motion.p
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 0.7, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
-                        className="text-xl md:text-2xl font-light tracking-wide uppercase"
-                    >
-                        About Us
-                    </motion.p>
-
                     <motion.h2
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
