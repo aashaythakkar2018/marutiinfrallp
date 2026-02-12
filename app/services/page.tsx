@@ -1,6 +1,7 @@
 import ServicesHero from '@/components/services/ServicesHero';
 import ServicesIntro from '@/components/services/ServicesIntro';
 import KeyExpertise from '@/components/services/KeyExpertise';
+import CoreServices from '@/components/services/CoreServices';
 import ProjectDelivery from '@/components/services/ProjectDelivery';
 import Differentiation from '@/components/services/Differentiation';
 import AdditionalServices from '@/components/services/AdditionalServices';
@@ -20,6 +21,8 @@ export default function ServicesPage() {
 
             <KeyExpertise />
 
+            <CoreServices />
+
             <ProjectDelivery />
 
             <Differentiation />
@@ -27,6 +30,8 @@ export default function ServicesPage() {
             <AdditionalServices />
 
             <FinalCTA />
+
+
 
             <Footer />
         </main>
