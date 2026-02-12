@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Play } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AboutHero() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -19,10 +20,16 @@ export default function AboutHero() {
         <div ref={containerRef} className="relative h-screen min-h-[700px] bg-navy overflow-hidden flex items-center justify-center">
             {/* Background Parallax */}
             <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-navy/80 z-10" />
-                {/* Placeholder for video/image background */}
-                <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-cover opacity-20" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-navy/50 to-navy" />
+                <div className="absolute inset-0 bg-navy/60 z-10" />
+                {/* Hero Background Image */}
+                <Image
+                    src="/images/About us HERO Image.JPG"
+                    alt="Maruti Infraeng LLP - About Us"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-navy/50 to-navy z-[5]" />
             </motion.div>
 
             {/* Content */}
