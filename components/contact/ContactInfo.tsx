@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function ContactInfo() {
@@ -105,15 +105,38 @@ export default function ContactInfo() {
             >
                 <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-6">Follow Us</h4>
                 <div className="flex gap-4">
-                    {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                        <a
-                            key={i}
-                            href="#"
-                            className="w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-navy hover:bg-navy hover:border-navy hover:text-white transition-all duration-300"
-                        >
-                            <Icon className="w-5 h-5" />
-                        </a>
-                    ))}
+                    <a
+                        href="https://www.facebook.com/marutinfraeng/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-navy hover:bg-navy hover:border-navy hover:text-white transition-all duration-300"
+                    >
+                        <Facebook className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/maruti_infraengllp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-navy hover:bg-navy hover:border-navy hover:text-white transition-all duration-300"
+                    >
+                        <Instagram className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/company/106003480/admin/dashboard/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-navy hover:bg-navy hover:border-navy hover:text-white transition-all duration-300"
+                    >
+                        <Linkedin className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://www.youtube.com/@marutinfraindia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-navy hover:bg-navy hover:border-navy hover:text-white transition-all duration-300"
+                    >
+                        <Youtube className="w-5 h-5" />
+                    </a>
                 </div>
             </motion.div>
         </div>
