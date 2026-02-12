@@ -3,6 +3,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function ContactInfo() {
     return (
@@ -25,6 +26,21 @@ export default function ContactInfo() {
                     Whether you have a question about our services, pricing, or want to discuss a potential project, our team is ready to help.
                 </motion.p>
             </div>
+
+            {/* Company Image */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl"
+            >
+                <Image
+                    src="/images/company-aerial-view.jpg"
+                    alt="Maruti Infraeng LLP - Aerial View"
+                    fill
+                    className="object-cover"
+                />
+            </motion.div>
 
             <div className="space-y-8">
                 {/* Office Location */}
