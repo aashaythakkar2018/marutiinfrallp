@@ -33,14 +33,14 @@ export default function AboutHero() {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-6 w-full text-center text-white">
+            <div className="relative z-20 max-w-7xl mx-auto px-6 w-full text-center text-white">
                 <div className="flex flex-col items-center gap-6">
                     <motion.div
                         initial={{ opacity: 0, y: 80, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                     >
-                        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight mb-2 text-white">
+                        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight mb-2 text-white" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
                             Driven by Purpose.
                         </h1>
                     </motion.div>
@@ -50,6 +50,7 @@ export default function AboutHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.7 }}
                         className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white"
+                        style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
                     >
                         Built on Trust.
                     </motion.h2>
