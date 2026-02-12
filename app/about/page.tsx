@@ -6,7 +6,6 @@ import TeamGrid from '@/components/about/TeamGrid';
 import Certifications from '@/components/about/Certifications';
 import Statistics from '@/components/about/Statistics';
 import FinalCTA from '@/components/about/FinalCTA';
-import Newsletter from '@/components/Newsletter';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -41,7 +40,6 @@ export default function AboutPage() {
 
             <FinalCTA />
 
-            <Newsletter />
 
             <Footer />
         </main>

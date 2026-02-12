@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const timelineData = [
@@ -9,31 +10,31 @@ const timelineData = [
         year: "2010",
         title: "Foundation of Excellence",
         description: "Maruti Infraeng LLP was founded in Surat with a clear vision: to revolutionize the Pre-Engineered Building industry in India. Starting with a small team of dedicated engineers and a commitment to quality, we laid the foundation for what would become one of Gujarat's most trusted steel construction companies.",
-        image: "/placeholder-factory.jpg"
+        image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-03-24%20at%2010.38.26%20AM%20(1).jpeg"
     },
     {
         year: "2015",
         title: "Expanding Horizons",
         description: "After establishing strong roots in Gujarat, we expanded our manufacturing capacity and invested in state-of-the-art machinery. This period marked our entry into large-scale industrial projects, serving clients across multiple states. Our 8000+ ton annual capacity began to take shape.",
-        image: "/placeholder-expansion.jpg"
+        image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-03-24%20at%2010.38.26%20AM.jpeg"
     },
     {
         year: "2018",
         title: "National Recognition",
         description: "Maruti Infraeng earned recognition as one of the top three steel construction companies in India. We achieved ISO certification, reflecting our commitment to international quality standards. Our portfolio grew to include projects for major industries.",
-        image: "/placeholder-award.jpg"
+        image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-08-13%20at%204.39.27%20PM%20(1).jpeg"
     },
     {
         year: "2022",
         title: "Technology & Innovation",
         description: "We invested heavily in cutting-edge design software and automated fabrication systems. Our engineering team grew to include specialists in structural analysis, detailing, and project management. Real-time tracking and smart project management systems were implemented.",
-        image: "/placeholder-tech.jpg"
+        image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-10-07%20at%206.06.40%20PM.jpeg"
     },
     {
         year: "2025",
         title: "Future-Forward Leadership",
         description: "Today, Maruti Infraeng LLP stands as a beacon of reliability and innovation. Having completed 10,000+ projects with a 112M+ annual turnover, we continue to push boundaries. Our focus remains on sustainable construction and customer satisfaction.",
-        image: "/placeholder-future.jpg"
+        image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-12-19%20at%2011.25.52-2.jpeg"
     }
 ];
 
@@ -133,10 +134,12 @@ export default function Timeline() {
                                     {/* Image Card */}
                                     <div className="order-2 md:order-1 relative aspect-[4/3] md:aspect-square bg-white rounded-3xl overflow-hidden shadow-2xl skew-y-1 ring-1 ring-black/5">
                                         <div className="absolute inset-0 bg-gradient-to-tr from-navy/5 to-transparent z-10" />
-                                        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 font-bold text-xl uppercase tracking-widest">
-                                            {/* Simulate Image */}
-                                            Image: {timelineData[activeYear].year}
-                                        </div>
+                                        <Image
+                                            src={timelineData[activeYear].image}
+                                            alt={timelineData[activeYear].title}
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
 
                                     {/* Text Content */}

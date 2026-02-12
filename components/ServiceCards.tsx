@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import FadeIn from './FadeIn';
 import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const services = [
     {
@@ -75,7 +76,11 @@ export default function ServiceCards() {
                 <div className="flex flex-col gap-12 py-12">
                     {services.map((service, index) => (
                         <FadeIn key={index} delay={index * 0.1}>
-                            <div className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-500 border border-gray-100 overflow-hidden">
+                            <motion.div
+                                whileHover={{ y: -8 }}
+                                transition={{ duration: 0.3, ease: 'easeOut' }}
+                                className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-500 border border-gray-100 overflow-hidden"
+                            >
                                 <div className="flex flex-col gap-6 relative z-10">
                                     <span className="text-secondary font-mono text-lg font-bold">
                                         {service.id}
@@ -91,14 +96,15 @@ export default function ServiceCards() {
 
                                     <div className="h-64 mt-6 rounded-2xl overflow-hidden relative">
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10" />
-                                        <img
+                                        <Image
                                             src={service.image}
                                             alt={service.title}
-                                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                            fill
+                                            className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                                         />
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </FadeIn>
                     ))}
                 </div>

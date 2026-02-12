@@ -6,7 +6,7 @@ import { Download, FileText } from "lucide-react";
 
 export default function Brochure() {
     return (
-        <div className="min-h-screen bg-dark-bg text-white">
+        <div className="min-h-screen bg-gray-50 text-slate-900">
             <Navbar />
             <PageHeader
                 title="Resources & Downloads"
@@ -14,45 +14,23 @@ export default function Brochure() {
             />
 
             <div className="max-w-4xl mx-auto px-6 py-24">
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex justify-center">
                     <FadeIn delay={0.1}>
-                        <div className="p-8 rounded-2xl bg-dark-card border border-white/5 flex flex-col items-center text-center hover:border-secondary transition-colors h-full">
-                            <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-6">
-                                <FileText className="w-8 h-8" />
+                        <div className="p-12 rounded-2xl bg-white border border-slate-200 shadow-lg flex flex-col items-center text-center hover:border-navy/30 transition-all duration-300 max-w-lg w-full group">
+                            <div className="w-24 h-24 rounded-full bg-navy/5 flex items-center justify-center text-navy mb-8 group-hover:scale-110 transition-transform">
+                                <FileText className="w-12 h-12" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-2">Corporate Brochure</h3>
-                            <p className="text-gray-400 mb-8 max-w-sm flex-grow">
+                            <h3 className="text-3xl font-bold text-navy mb-4">Corporate Brochure</h3>
+                            <p className="text-slate-600 mb-10 text-lg leading-relaxed">
                                 Comprehensive overview of our company, vision, services, and major project portfolio.
                             </p>
-                            {/* TODO: Replace '#' with actual brochure PDF link */}
                             <a
-                                href="#"
-                                id="download-brochure-link"
-                                className="px-8 py-3 bg-secondary text-white rounded-lg font-semibold hover:bg-secondary/90 transition-colors flex items-center gap-2"
+                                href="/brochure.pdf"
+                                download="Maruti_Infra_Brochure.pdf"
+                                className="px-10 py-4 bg-navy text-white text-lg rounded-xl font-semibold hover:bg-navy/90 transition-all flex items-center gap-3 shadow-lg shadow-navy/20 hover:shadow-navy/40 hover:-translate-y-1"
                             >
-                                <Download className="w-4 h-4" />
-                                Download PDF (12MB)
-                            </a>
-                        </div>
-                    </FadeIn>
-
-                    <FadeIn delay={0.2}>
-                        <div className="p-8 rounded-2xl bg-dark-card border border-white/5 flex flex-col items-center text-center hover:border-secondary transition-colors h-full">
-                            <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-6">
-                                <FileText className="w-8 h-8" />
-                            </div>
-                            <h3 className="text-xl font-bold text-white mb-2">Technical Specs</h3>
-                            <p className="text-gray-400 mb-8 max-w-sm flex-grow">
-                                Detailed technical data sheets for our PEB systems, roofing materials, and structural steel grades.
-                            </p>
-                            {/* TODO: Replace '#' with actual specs PDF link */}
-                            <a
-                                href="#"
-                                id="download-specs-link"
-                                className="px-8 py-3 bg-white/5 border border-white/10 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center gap-2"
-                            >
-                                <Download className="w-4 h-4" />
-                                Download PDF (5MB)
+                                <Download className="w-5 h-5" />
+                                Download PDF
                             </a>
                         </div>
                     </FadeIn>

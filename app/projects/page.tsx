@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import FadeIn from "@/components/FadeIn";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
     {
@@ -44,10 +45,11 @@ export default function Projects() {
                         <FadeIn key={idx} delay={idx * 0.1}>
                             <div className="group grid md:grid-cols-2 gap-8 items-center bg-dark-card border border-white/5 rounded-2xl overflow-hidden hover:border-secondary/30 transition-colors">
                                 <div className="h-64 md:h-full min-h-[300px] bg-white/5 relative">
-                                    <img
+                                    <Image
                                         src={`https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop`}
                                         alt={project.title}
-                                        className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
                                 <div className="p-8 md:p-12">

@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Button from '@/components/ui/Button';
+import { Button } from "@/components/ui/button";
 import { Play } from 'lucide-react';
 
 export default function AboutHero() {

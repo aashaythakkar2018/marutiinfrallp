@@ -126,4 +126,4 @@ h6 {
   background: linear-gradient(to right, var(--color-navy), var(--color-steel));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+}html { scroll-behavior: smooth; }
