@@ -37,7 +37,7 @@ const steps = [
 
 export default function ProcessFlow() {
     return (
-        <section className="py-24 bg-ivory-bg text-card-dark theme-light border-t border-gray-200">
+        <section className="py-16 bg-ivory-bg text-card-dark theme-light border-t border-gray-200">
             <div className="max-w-6xl mx-auto px-6">
                 <FadeIn>
                     <div className="text-center mb-16">

@@ -13,7 +13,7 @@ export default function ClientLogos() {
     ];
 
     return (
-        <section className="py-12 bg-white border-b border-gray-100 overflow-hidden">
+        <section className="py-8 bg-white border-b border-gray-100 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 text-center mb-8">
                 <p className="text-sm text-gray-500 font-medium">TRUSTED BY INDUSTRY LEADERS</p>
             </div>

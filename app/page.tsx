@@ -22,7 +22,7 @@ export default function Home() {
       <Testimonials />
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden bg-[#1A3A5C]" style={{ backgroundColor: '#1A3A5C' }}>
+      <section className="py-16 relative overflow-hidden bg-[#1A3A5C]" style={{ backgroundColor: '#1A3A5C' }}>
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white !text-white" style={{ color: '#ffffff' }}>Ready To Build</h2>
           <Link href="/contact">
