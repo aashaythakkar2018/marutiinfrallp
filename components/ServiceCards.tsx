@@ -12,28 +12,28 @@ const services = [
         id: "01",
         title: "Pre-Engineered Buildings",
         description: "Complete turnkey solutions for industrial sheds, warehouses, and factories designed for durability and speed.",
-        image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop",
+        image: "/PROJECTS/7.png",
         link: "/peb"
     },
     {
         id: "02",
         title: "Heavy Structural Steel",
         description: "Precision-engineered steel structures for heavy industries, power plants, and infrastructure projects.",
-        image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
+        image: "/STRUCTURES STEEL/1.jpeg",
         link: "/services"
     },
     {
         id: "03",
         title: "Industrial Roofing",
         description: "High-performance roofing systems ensuring leak-proof and weather-resistant protection for your assets.",
-        image: "https://images.unsplash.com/photo-1535732820275-9ffd998cac22?q=80&w=2070&auto=format&fit=crop",
+        image: "/PROJECTS/8.png",
         link: "/services"
     },
     {
         id: "04",
         title: "Civil Construction",
         description: "Integrated civil works providing strong foundations and flooring for seamless structural erection.",
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
+        image: "/COMPLETE SOLUTIONS/1.jpeg",
         link: "/services"
     }
 ];
