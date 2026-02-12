@@ -56,7 +56,7 @@ export default function LocationMap() {
                     >
                         <div className="w-full h-24 bg-slate-100 rounded-lg mb-3 relative overflow-hidden group/card">
                             <Image
-                                src="/images/factory-location.png"
+                                src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop"
                                 alt="Factory Location - Surat, Gujarat"
                                 fill
                                 className="object-cover"
