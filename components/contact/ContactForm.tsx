@@ -122,7 +122,7 @@ export default function ContactForm() {
 
                 <Button
                     type="submit"
-                    className="w-full gap-2"
+                    className="w-full gap-2 text-white"
                     disabled={status === 'submitting'}
                 >
                     {status === 'submitting' ? (
