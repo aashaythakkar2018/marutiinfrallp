@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const additionalServices = [
-    { title: "Visionary Planning Solutions", image: "/images/service-planning.png" },
-    { title: "Ingenious Structural Design", image: "/images/service-design.png" },
-    { title: "Punctual Steel Structure Delivery", image: "/images/service-delivery.png" },
-    { title: "Precision Steel Structure Erection", image: "/images/service-erection.png" }
+    { title: "Visionary Planning Solutions", image: "/images/core-planning.jpg" },
+    { title: "Ingenious Structural Design", image: "/images/core-design.jpg" },
+    { title: "Punctual Steel Structure Delivery", image: "/images/core-delivery.jpg" },
+    { title: "Precision Steel Structure Erection", image: "/images/core-erection.jpg" }
 ];
 
 const containerVariants = {
