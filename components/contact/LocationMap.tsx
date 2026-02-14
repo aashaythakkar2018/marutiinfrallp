@@ -15,23 +15,23 @@ export default function LocationMap() {
                 dots={[
                     {
                         start: { lat: 51.5074, lng: -0.1278 }, // London
-                        end: { lat: 21.1702, lng: 72.8311 }, // Surat
+                        end: { lat: 22.3039, lng: 70.8022 }, // Rajkot
                     },
                     {
                         start: { lat: 25.2048, lng: 55.2708 }, // Dubai
-                        end: { lat: 21.1702, lng: 72.8311 }, // Surat
+                        end: { lat: 22.3039, lng: 70.8022 }, // Rajkot
                     },
                     {
                         start: { lat: 1.3521, lng: 103.8198 }, // Singapore
-                        end: { lat: 21.1702, lng: 72.8311 }, // Surat
+                        end: { lat: 22.3039, lng: 70.8022 }, // Rajkot
                     },
                     {
                         start: { lat: -1.2921, lng: 36.8219 }, // Nairobi
-                        end: { lat: 21.1702, lng: 72.8311 }, // Surat
+                        end: { lat: 22.3039, lng: 70.8022 }, // Rajkot
                     },
                     {
                         start: { lat: 40.7128, lng: -74.0060 }, // New York
-                        end: { lat: 21.1702, lng: 72.8311 }, // Surat
+                        end: { lat: 22.3039, lng: 70.8022 }, // Rajkot
                     },
                 ]}
             />
@@ -40,11 +40,9 @@ export default function LocationMap() {
             <div className="absolute inset-0 pointer-events-none">
                 <div
                     className="absolute pointer-events-auto"
-                    // Approximate position for Surat on the 800x400 map within aspect ratio
-                    // This might need fine-tuning as WorldMap uses 800x400 projection
-                    // Surat (21N, 72E) -> x: ~564, y: ~153 (based on projectPoint logic)
-                    // 564/800 = 70.5%, 153/400 = 38.25%
-                    style={{ top: '38%', left: '70%' }}
+                    // Approximate position for Rajkot on the 800x400 map within aspect ratio
+                    // Rajkot (22.3N, 70.8E) -> Slightly North-West of Surat
+                    style={{ top: '36%', left: '69%' }}
                 >
                     {/* Floating Address Card */}
                     <motion.div
@@ -57,12 +55,12 @@ export default function LocationMap() {
                         <div className="w-full h-24 bg-slate-100 rounded-lg mb-3 relative overflow-hidden group/card">
                             <Image
                                 src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop"
-                                alt="Factory Location - Surat, Gujarat"
+                                alt="Factory Location - Rajkot, Gujarat"
                                 fill
                                 className="object-cover"
                             />
                         </div>
-                        <h4 className="font-bold text-navy text-lg mb-1">Surat, Gujarat</h4>
+                        <h4 className="font-bold text-navy text-lg mb-1">Rajkot, Gujarat</h4>
                         <p className="text-sm text-slate-500 font-medium mb-3">Headquarters & Manufacturing</p>
 
                         <div className="space-y-2">
