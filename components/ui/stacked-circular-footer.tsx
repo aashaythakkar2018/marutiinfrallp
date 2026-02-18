@@ -66,7 +66,7 @@ function StackedCircularFooter() {
                     <div className="mb-8 text-center text-slate-500 text-sm space-y-2">
                         <div className="flex items-center justify-center gap-2">
                             <MapPin className="h-4 w-4 text-orange" />
-                            <span>Survey No. 222, Plot No. 9, Veraval (Shapar), Rajkot - 360024, Gujarat, India.</span>
+                            <span>Block No. 189-190, Velachha, Mangrol, Surat - 394405, Gujarat, India.</span>
                         </div>
                         <div className="flex items-center justify-center gap-6">
                             <div className="flex items-center gap-2">
