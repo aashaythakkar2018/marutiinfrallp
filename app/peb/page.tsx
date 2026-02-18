@@ -117,11 +117,17 @@ export default function PEB() {
 
                     <FadeIn delay={0.2}>
                         <div className="h-[400px] rounded-2xl bg-slate-100 border border-slate-200 relative overflow-hidden shadow-lg">
-                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531834685032-c34bf0d84c7c?q=80&w=1997&auto=format&fit=crop')] bg-cover bg-center" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                            <div className="absolute bottom-6 left-6 text-white">
-                                <div className="text-xl font-bold">Structural Excellence</div>
-                                <div className="text-sm text-white/80">Engineered for durability</div>
+                            <img
+                                src="/images/factory-interior.png"
+                                alt="PEB Structure Interior"
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                            <div className="absolute bottom-6 left-6 text-white max-w-sm">
+                                <div className="text-xl font-bold mb-2">Structural Excellence</div>
+                                <div className="text-sm text-white/90 leading-relaxed">
+                                    Engineered for durability, precision, and rapid assembly—setting the standard for modern industrial infrastructure.
+                                </div>
                             </div>
                         </div>
                     </FadeIn>
