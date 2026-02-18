@@ -12,13 +12,23 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         id: "testimonial-1",
-        title: "Client Testimonial",
-        videoUrl: "https://www.youtube.com/embed/FnalsUHh2ts?si=2aHJu_zjVlmY4ndW",
+        title: "Maruti Infraeng Testimonial 1",
+        videoUrl: "https://www.youtube.com/embed/YlUthMUU-RQ",
     },
     {
         id: "testimonial-2",
-        title: "Client Testimonial",
-        videoUrl: "https://www.youtube.com/embed/mO5nEafYwtY",
+        title: "Maruti Infraeng Testimonial 2",
+        videoUrl: "https://www.youtube.com/embed/Q7zjVc-YvDo",
+    },
+    {
+        id: "testimonial-3",
+        title: "Maruti Infraeng Testimonial 3",
+        videoUrl: "https://www.youtube.com/embed/ojuVR59AtRg",
+    },
+    {
+        id: "testimonial-4",
+        title: "Maruti Infraeng Testimonial 4",
+        videoUrl: "https://www.youtube.com/embed/9CJIyx5674I",
     }
 ]
 
