@@ -1,35 +1,74 @@
-"use client"
-
+import { useState } from 'react'
+import { Play } from 'lucide-react'
 import FadeIn from './FadeIn'
 import { Card } from '@/components/ui/card'
 
 interface Testimonial {
     id: string
     title: string
-    videoUrl: string
+    videoId: string
 }
 
 const testimonials: Testimonial[] = [
     {
         id: "testimonial-1",
         title: "Maruti Infraeng Testimonial 1",
-        videoUrl: "https://www.youtube.com/embed/Q7zjVc-YvDo",
+        videoId: "Q7zjVc-YvDo",
     },
     {
         id: "testimonial-2",
         title: "Maruti Infraeng Testimonial 2",
-        videoUrl: "https://www.youtube.com/embed/ojuVR59AtRg",
+        videoId: "ojuVR59AtRg",
     },
     {
         id: "testimonial-3",
         title: "Maruti Infraeng Testimonial 3",
-        videoUrl: "https://www.youtube.com/embed/9CJIyx5674I",
+        videoId: "9CJIyx5674I",
     }
 ]
 
+function VideoCard({ testimonial }: { testimonial: Testimonial }) {
+    const [isPlaying, setIsPlaying] = useState(false)
+
+    return (
+        <Card className="relative z-10 overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 group">
+            <div className="relative aspect-video bg-slate-900 overflow-hidden">
+                {!isPlaying ? (
+                    <button
+                        onClick={() => setIsPlaying(true)}
+                        className="absolute inset-0 w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700 cursor-pointer"
+                        aria-label={`Play ${testimonial.title}`}
+                    >
+                        {/* Thumbnail */}
+                        <img
+                            src={`https://img.youtube.com/vi/${testimonial.videoId}/maxresdefault.jpg`}
+                            alt={testimonial.title}
+                            className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                        />
+                        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />
+
+                        {/* Play Button */}
+                        <div className="relative z-20 w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <Play className="w-8 h-8 fill-current ml-1" />
+                        </div>
+                    </button>
+                ) : (
+                    <iframe
+                        className="w-full h-full relative z-20"
+                        src={`https://www.youtube.com/embed/${testimonial.videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+                        title={testimonial.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+                )}
+            </div>
+        </Card>
+    )
+}
+
 export default function Testimonials() {
     return (
-        <section className="py-16 bg-gradient-to-b from-slate-50 to-white">
+        <section className="py-16 bg-gradient-to-b from-slate-50 to-white relative z-0">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <FadeIn>
@@ -51,19 +90,7 @@ export default function Testimonials() {
                 <div className="grid md:grid-cols-3 gap-8 lg:gap-8">
                     {testimonials.map((testimonial, index) => (
                         <FadeIn key={testimonial.id} delay={index * 0.2}>
-                            <Card className="relative z-10 overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500">
-                                {/* YouTube Video Embed */}
-                                <div className="relative aspect-video bg-slate-900 overflow-hidden">
-                                    <iframe
-                                        className="w-full h-full relative z-20"
-                                        src={`${testimonial.videoUrl}?rel=0&modestbranding=1&playsinline=1`}
-                                        title={testimonial.title}
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen
-                                    />
-                                </div>
-                            </Card>
+                            <VideoCard testimonial={testimonial} />
                         </FadeIn>
                     ))}
                 </div>
