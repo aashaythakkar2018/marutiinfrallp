@@ -13,21 +13,16 @@ const testimonials: Testimonial[] = [
     {
         id: "testimonial-1",
         title: "Maruti Infraeng Testimonial 1",
-        videoUrl: "https://www.youtube.com/embed/YlUthMUU-RQ",
+        videoUrl: "https://www.youtube.com/embed/Q7zjVc-YvDo",
     },
     {
         id: "testimonial-2",
         title: "Maruti Infraeng Testimonial 2",
-        videoUrl: "https://www.youtube.com/embed/Q7zjVc-YvDo",
+        videoUrl: "https://www.youtube.com/embed/ojuVR59AtRg",
     },
     {
         id: "testimonial-3",
         title: "Maruti Infraeng Testimonial 3",
-        videoUrl: "https://www.youtube.com/embed/ojuVR59AtRg",
-    },
-    {
-        id: "testimonial-4",
-        title: "Maruti Infraeng Testimonial 4",
         videoUrl: "https://www.youtube.com/embed/9CJIyx5674I",
     }
 ]
@@ -53,7 +48,7 @@ export default function Testimonials() {
                 </FadeIn>
 
                 {/* Video Testimonials Grid */}
-                <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <div className="grid md:grid-cols-3 gap-8 lg:gap-8">
                     {testimonials.map((testimonial, index) => (
                         <FadeIn key={testimonial.id} delay={index * 0.2}>
                             <Card className="overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500">
