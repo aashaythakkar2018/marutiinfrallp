@@ -10,18 +10,11 @@ export default function Hero() {
         <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden theme-dark">
             {/* Background Video Layer */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-dark-bg/60 z-10" /> {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(2,4,16,0.3),rgba(2,4,16,1))] z-20" /> {/* Gradient Vignette */}
-
-                {/* Chevron Pattern Overlay */}
-                <div className="absolute inset-0 z-[15] opacity-20"
-                    style={{ backgroundImage: 'radial-gradient(#3A7CA5 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
-                </div>
 
                 <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
                     <iframe
                         src="https://www.youtube.com/embed/YlUthMUU-RQ?autoplay=1&mute=1&controls=0&loop=1&playlist=YlUthMUU-RQ&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
-                        className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover opacity-50 pointer-events-none"
+                        className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover pointer-events-none"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     />
