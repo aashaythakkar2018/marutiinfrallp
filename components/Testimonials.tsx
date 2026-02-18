@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
 
 function VideoCard({ testimonial }: { testimonial: Testimonial }) {
     const [isPlaying, setIsPlaying] = useState(false)
-    const [imgSrc, setImgSrc] = useState(`https://img.youtube.com/vi/${testimonial.videoId}/maxresdefault.jpg`)
+    const [imgSrc, setImgSrc] = useState(`https://img.youtube.com/vi/${testimonial.videoId}/hqdefault.jpg`)
 
     return (
         <Card className="relative z-10 overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 group">
@@ -47,12 +47,6 @@ function VideoCard({ testimonial }: { testimonial: Testimonial }) {
                             src={imgSrc}
                             alt={testimonial.title}
                             className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                            onError={() => {
-                                // Fallback to high quality if max resolution is not available
-                                if (imgSrc.includes('maxresdefault')) {
-                                    setImgSrc(`https://img.youtube.com/vi/${testimonial.videoId}/hqdefault.jpg`)
-                                }
-                            }}
                         />
                         <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />
 
