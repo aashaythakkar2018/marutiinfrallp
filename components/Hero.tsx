@@ -20,17 +20,24 @@ export default function Hero() {
 
             {/* Content Layer */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
-            </Link>
-            <Link
-                href="/services"
-                className="w-full sm:w-auto px-10 py-5 bg-black/30 border border-white/30 text-white rounded-full font-bold text-lg hover:bg-black/40 hover:border-white/50 transition-all backdrop-blur-md shadow-lg"
-            >
-                Our Services
-            </Link>
-        </div>
-                </FadeIn >
-            </div >
-        </div >
-        </section >
+                <FadeIn delay={0.8}>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <Link
+                            href="/contact"
+                            className="w-full sm:w-auto px-10 py-5 bg-orange-600 text-white rounded-full font-bold text-lg hover:bg-orange-700 transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+                        >
+                            Get a Quote
+                            <ArrowRight className="w-5 h-5" />
+                        </Link>
+                        <Link
+                            href="/services"
+                            className="w-full sm:w-auto px-10 py-5 bg-black/30 border border-white/30 text-white rounded-full font-bold text-lg hover:bg-black/40 hover:border-white/50 transition-all backdrop-blur-md shadow-lg"
+                        >
+                            Our Services
+                        </Link>
+                    </div>
+                </FadeIn>
+            </div>
+        </section>
     )
 }
