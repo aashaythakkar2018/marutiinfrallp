@@ -18,16 +18,14 @@ export default function Hero() {
                     style={{ backgroundImage: 'radial-gradient(#3A7CA5 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
                 </div>
 
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover opacity-50"
-                >
-                    {/* Placeholder Industry Video */}
-                    <source src="https://cdn.coverr.co/videos/coverr-construction-site-overhead-view-5244/1080p.mp4" type="video/mp4" />
-                </video>
+                <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+                    <iframe
+                        src="https://www.youtube.com/embed/YlUthMUU-RQ?autoplay=1&mute=1&controls=0&loop=1&playlist=YlUthMUU-RQ&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
+                        className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover opacity-50 pointer-events-none"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+                </div>
             </div>
 
             <div className="relative z-30 max-w-7xl mx-auto px-6 pt-20">
