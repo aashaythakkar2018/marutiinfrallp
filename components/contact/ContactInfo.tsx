@@ -56,9 +56,8 @@ export default function ContactInfo() {
                     <div>
                         <h3 className="text-xl font-bold text-navy mb-2">Our Head Office</h3>
                         <p className="text-slate-600 leading-relaxed mb-3">
-                            Survey No. 222, Plot No. 9, <br />
-                            Veraval (Shapar), Rajkot - 360024, <br />
-                            Gujarat, India.
+                            Block No. 189-190, Velachha, Mangrol, <br />
+                            Surat - 394405, Gujarat, India.
                         </p>
                         <a
                             href="https://maps.google.com"
