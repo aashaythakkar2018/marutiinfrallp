@@ -7,57 +7,54 @@ import FadeIn from './FadeIn';
 
 export default function Hero() {
     return (
-        <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden theme-dark">
+        <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
             {/* Background Video Layer */}
-            <div className="absolute inset-0 z-0">
-
-                <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
-                    <iframe
-                        src="https://www.youtube.com/embed/YlUthMUU-RQ?autoplay=1&mute=1&controls=0&loop=1&playlist=YlUthMUU-RQ&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
-                        className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover pointer-events-none"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    />
-                </div>
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <iframe
+                    src="https://www.youtube.com/embed/YlUthMUU-RQ?autoplay=1&mute=1&controls=0&loop=1&playlist=YlUthMUU-RQ&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
+                    className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover pointer-events-none"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                />
             </div>
 
-            <div className="relative z-30 max-w-7xl mx-auto px-6 pt-20">
-                <div className="max-w-5xl">
-                    <FadeIn delay={0.2}>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm font-medium mb-8 backdrop-blur-sm">
-                            <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                            Premium Industrial Solutions
-                        </div>
-                    </FadeIn>
+            {/* Content Layer */}
+            <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+                <FadeIn delay={0.2}>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/20 border border-white/20 text-white text-sm font-medium mb-8 backdrop-blur-md shadow-lg">
+                        <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+                        Premium Industrial Solutions
+                    </div>
+                </FadeIn>
 
+                <div className="max-w-5xl mx-auto">
                     <FadeIn delay={0.4}>
-                        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight text-white mb-8 leading-[1.1] md:leading-[1]">
+                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
                             Your Vision, <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-gray-600">
+                            <span className="text-white">
                                 Built with Precision.
                             </span>
                         </h1>
                     </FadeIn>
 
                     <FadeIn delay={0.6}>
-                        <p className="text-lg md:text-2xl text-gray-400 mb-12 max-w-2xl leading-relaxed">
-                            <span className="text-secondary font-bold text-2xl md:text-3xl align-middle mr-2">•</span>
+                        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md font-medium">
                             Leading the way in Pre-Engineered Buildings and heavy structural steel engineering.
                         </p>
                     </FadeIn>
 
                     <FadeIn delay={0.8}>
-                        <div className="flex flex-col sm:flex-row items-center gap-6">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                             <Link
                                 href="/contact"
-                                className="w-full sm:w-auto px-10 py-5 bg-secondary text-white rounded-full font-bold text-lg hover:bg-secondary/90 hover:scale-105 transition-all flex items-center justify-center gap-3 shadow-[0_0_40px_-10px_rgba(255,77,0,0.5)]"
+                                className="w-full sm:w-auto px-10 py-5 bg-orange-600 text-white rounded-full font-bold text-lg hover:bg-orange-700 transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
                             >
                                 Get a Quote
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
                                 href="/services"
-                                className="w-full sm:w-auto px-10 py-5 bg-white/5 border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-md"
+                                className="w-full sm:w-auto px-10 py-5 bg-black/30 border border-white/30 text-white rounded-full font-bold text-lg hover:bg-black/40 hover:border-white/50 transition-all backdrop-blur-md shadow-lg"
                             >
                                 Our Services
                             </Link>
@@ -65,9 +62,6 @@ export default function Hero() {
                     </FadeIn>
                 </div>
             </div>
-
-            {/* Bottom Glow */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark-bg to-transparent z-40" />
         </section>
     )
 }
