@@ -41,11 +41,13 @@ export default function Navbar() {
 
             {/* Get Quote Button - Fixed Top Right */}
             <div className="fixed top-6 right-6 z-50">
-                <Button
-                    className="rounded-full px-6 bg-orange hover:bg-orange-dark text-white shadow-lg shadow-orange/20 border-none text-sm hidden sm:flex"
-                >
-                    Get Quote
-                </Button>
+                <Link href="/contact">
+                    <Button
+                        className="rounded-full px-6 bg-orange hover:bg-orange-dark text-white shadow-lg shadow-orange/20 border-none text-sm hidden sm:flex"
+                    >
+                        Get Quote
+                    </Button>
+                </Link>
                 {/* Mobile specific button/icon if needed, but NavBar handles mobile menu items */}
             </div>
         </>
