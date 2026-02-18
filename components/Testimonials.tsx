@@ -51,12 +51,12 @@ export default function Testimonials() {
                 <div className="grid md:grid-cols-3 gap-8 lg:gap-8">
                     {testimonials.map((testimonial, index) => (
                         <FadeIn key={testimonial.id} delay={index * 0.2}>
-                            <Card className="overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500">
+                            <Card className="relative z-10 overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500">
                                 {/* YouTube Video Embed */}
                                 <div className="relative aspect-video bg-slate-900 overflow-hidden">
                                     <iframe
-                                        className="w-full h-full"
-                                        src={testimonial.videoUrl}
+                                        className="w-full h-full relative z-20"
+                                        src={`${testimonial.videoUrl}?rel=0&modestbranding=1&playsinline=1`}
                                         title={testimonial.title}
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
