@@ -43,7 +43,7 @@ export default function PEB() {
             title: "PRE-ENGINEERED BUILDINGS",
             summary: "Maruti Infraeng LLP delivers high-performance Pre-Engineered Building (PEB) solutions designed in accordance with the latest U.S. and Indian standards. From analysis and structural design to precision fabrication and installation, our PEB systems ensure durability, cost efficiency, and faster project completion for industrial, commercial, and institutional applications.",
             url: "#",
-            image: "/PROJECTS/1.jpeg",
+            image: "/PROJECTS/15.jpeg",
         },
         {
             id: "peb-2",

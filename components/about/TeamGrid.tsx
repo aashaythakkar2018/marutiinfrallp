@@ -22,7 +22,7 @@ const team = [
 
 export default function TeamGrid() {
     return (
-        <section className="py-24 bg-white">
+        <section className="py-12 md:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <span className="text-orange font-semibold tracking-wider uppercase">The Team</span>

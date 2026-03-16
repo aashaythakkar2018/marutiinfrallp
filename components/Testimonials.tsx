@@ -34,24 +34,24 @@ function VideoCard({ testimonial }: { testimonial: Testimonial }) {
     const [imgSrc, setImgSrc] = useState(`https://img.youtube.com/vi/${testimonial.videoId}/hqdefault.jpg`)
 
     return (
-        <Card className="relative z-10 overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 group">
+        <Card className="relative z-10 hover:z-50 overflow-hidden border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 group">
             <div className="relative aspect-video bg-slate-900 overflow-hidden">
                 {!isPlaying ? (
                     <button
                         onClick={() => setIsPlaying(true)}
-                        className="absolute inset-0 w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700 cursor-pointer"
+                        className="absolute inset-0 z-50 w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700 cursor-pointer"
                         aria-label={`Play ${testimonial.title}`}
                     >
                         {/* Thumbnail */}
                         <img
                             src={imgSrc}
                             alt={testimonial.title}
-                            className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                            className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity pointer-events-none"
                         />
-                        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />
+                        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors pointer-events-none" />
 
                         {/* Play Button */}
-                        <div className="relative z-20 w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <div className="relative z-20 w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 pointer-events-none">
                             <Play className="w-8 h-8 fill-current ml-1" />
                         </div>
                     </button>

@@ -7,34 +7,40 @@ import { cn } from '@/lib/utils';
 
 const timelineData = [
     {
-        year: "2010",
-        title: "Foundation of Excellence",
-        description: "Maruti Infraeng LLP was founded in Surat with a clear vision: to revolutionize the Pre-Engineered Building industry in India. Starting with a small team of dedicated engineers and a commitment to quality, we laid the foundation for what would become one of Gujarat's most trusted steel construction companies.",
+        year: "2001",
+        title: "Foundation: Shree Bajrang Leth Machine and Welding",
+        description: "Operating from 2001 to 2007 at Vill-Post: Una, Dis-Geer Somnath. Specializing in Fabrication Work, Engineering Work, Shed Work, and Grill Door Work.",
         image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-03-24%20at%2010.38.26%20AM%20(1).jpeg"
     },
     {
-        year: "2015",
-        title: "Expanding Horizons",
-        description: "After establishing strong roots in Gujarat, we expanded our manufacturing capacity and invested in state-of-the-art machinery. This period marked our entry into large-scale industrial projects, serving clients across multiple states. Our 8000+ ton annual capacity began to take shape.",
+        year: "2008",
+        title: "Expansion: Surat & Rajkot",
+        description: "Operating from 2008 to 2010 across Surat and Rajkot districts. Expanding services into Industrial Dome construction alongside Fabrication and Engineering Work.",
         image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-03-24%20at%2010.38.26%20AM.jpeg"
     },
     {
-        year: "2018",
-        title: "National Recognition",
-        description: "Maruti Infraeng earned recognition as one of the top three steel construction companies in India. We achieved ISO certification, reflecting our commitment to international quality standards. Our portfolio grew to include projects for major industries.",
+        year: "2010",
+        title: "Swastik Industries & Mandroof Industries",
+        description: "Operating from 2010 to 2017 at Maruti Industrial Estt, Jolva. Expanded reach across Gujarat (Surat, Ahmedabad, Rajkot, etc.). Manufacturing Colour Coated Sheets, Semi PEB, and Industrial Domes.",
         image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-08-13%20at%204.39.27%20PM%20(1).jpeg"
     },
     {
-        year: "2022",
-        title: "Technology & Innovation",
-        description: "We invested heavily in cutting-edge design software and automated fabrication systems. Our engineering team grew to include specialists in structural analysis, detailing, and project management. Real-time tracking and smart project management systems were implemented.",
+        year: "2018",
+        title: "Shree Hari Krishna & Radhe Krishna Infrastructure",
+        description: "Ongoing since 2018, serving across Gujarat and expanding into Maharashtra. Continuing massive production in Colour Coated Sheets, Fabrication, Industrial Domes, Semi PEB, and full PEB.",
         image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-10-07%20at%206.06.40%20PM.jpeg"
     },
     {
-        year: "2025",
-        title: "Future-Forward Leadership",
-        description: "Today, Maruti Infraeng LLP stands as a beacon of reliability and innovation. Having completed 10,000+ projects with a 112M+ annual turnover, we continue to push boundaries. Our focus remains on sustainable construction and customer satisfaction.",
+        year: "2019",
+        title: "Builtree Infratech LLP",
+        description: "Ongoing since 2019 out of Rajkot. A specialized focus on Pre-Engineered Buildings, Industrial Domes, Warehouses, Factory Sheds, and Godowns.",
         image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-12-19%20at%2011.25.52-2.jpeg"
+    },
+    {
+        year: "2023",
+        title: "Maruti Infraeng LLP",
+        description: "Established in 2023 in Velachha, Surat. Delivering modern Pre-Engineered Buildings, vast Industrial Domes, robust Warehouses, and Factory Sheds to meet modern industrial demands.",
+        image: "/TIME%20LINE%20IMAGES/WhatsApp%20Image%202025-03-24%20at%2010.38.26%20AM%20(1).jpeg"
     }
 ];
 

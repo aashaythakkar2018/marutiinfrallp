@@ -29,9 +29,9 @@ export default function Navbar() {
                     <NextImage
                         src="/images/Lof with tag line.png"
                         alt="Maruti Infra Engineering"
-                        width={200}
-                        height={80}
-                        className="h-20 w-auto object-contain"
+                        width={240}
+                        height={120}
+                        className="h-28 w-auto object-contain"
                     />
                 </Link>
             </div>

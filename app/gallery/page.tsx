@@ -38,21 +38,27 @@ const completeSolutionImages = [
 ]
 
 const projectImages = [
-    "/PROJECTS/1.jpeg",
     "/PROJECTS/2.jpeg",
     "/PROJECTS/3.jpeg",
     "/PROJECTS/4.jpeg",
     "/PROJECTS/5.jpeg",
-    "/PROJECTS/6.png",
-    "/PROJECTS/7.png",
-    "/PROJECTS/8.png",
-    "/PROJECTS/9.png",
-    "/PROJECTS/10.png",
+    "/PROJECTS/6.jpeg",
+    "/PROJECTS/7.jpeg",
+    "/PROJECTS/8.jpeg",
+    "/PROJECTS/9.jpeg",
+    "/PROJECTS/10.jpeg",
     "/PROJECTS/11.jpeg",
     "/PROJECTS/12.jpeg",
     "/PROJECTS/13.jpeg",
     "/PROJECTS/14.jpeg",
     "/PROJECTS/15.jpeg",
+    "/PROJECTS/16.jpeg",
+    "/PROJECTS/17.jpeg",
+    "/PROJECTS/18.jpeg",
+    "/PROJECTS/19.jpeg",
+    "/PROJECTS/20.jpeg",
+    "/PROJECTS/21.jpeg",
+    "/PROJECTS/22.jpeg",
 ]
 
 const structureSteelImages = [

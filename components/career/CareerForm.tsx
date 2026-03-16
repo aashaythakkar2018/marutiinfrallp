@@ -12,12 +12,44 @@ export default function CareerForm() {
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
     const [fileName, setFileName] = useState<string>('No file chosen');
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus('submitting');
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setStatus('success');
+        
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+        
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    formType: 'career',
+                    name: formData.get('name'),
+                    address: formData.get('address'),
+                    position: formData.get('position'),
+                    city: formData.get('city'),
+                    postcode: formData.get('postcode'),
+                    phone: formData.get('phone'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message'),
+                }),
+            });
+
+            if (response.ok) {
+                setStatus('success');
+                form.reset();
+                setFileName('No file chosen');
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            setStatus('error');
+        }
     };
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -60,6 +92,7 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Full Name *</label>
                     <Input
+                        name="name"
                         placeholder="Enter your full name"
                         required
                         className="bg-gray-50 border-gray-200 text-slate-900 placeholder:text-gray-400 focus-visible:bg-white"
@@ -69,6 +102,7 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Address *</label>
                     <Input
+                        name="address"
                         placeholder="Enter your address"
                         required
                         className="bg-gray-50 border-gray-200 text-slate-900 placeholder:text-gray-400 focus-visible:bg-white"
@@ -79,13 +113,13 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="block text-sm font-medium text-gray-400">Position</label>
                     <div className="relative">
-                        <select className="w-full h-12 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:border-transparent appearance-none cursor-pointer focus-visible:bg-white transition-colors">
+                        <select name="position" className="w-full h-12 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:border-transparent appearance-none cursor-pointer focus-visible:bg-white transition-colors">
                             <option value="">--select--</option>
-                            <option value="structural-engineer">Structural Engineer</option>
-                            <option value="site-supervisor">Site Supervisor</option>
-                            <option value="sales-executive">Sales Executive</option>
-                            <option value="project-manager">Project Manager</option>
-                            <option value="other">Other</option>
+                            <option value="Structural Engineer">Structural Engineer</option>
+                            <option value="Site Supervisor">Site Supervisor</option>
+                            <option value="Sales Executive">Sales Executive</option>
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="Other">Other</option>
                         </select>
                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,6 +132,7 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">City *</label>
                     <Input
+                        name="city"
                         placeholder="Enter your city"
                         required
                         className="bg-gray-50 border-gray-200 text-slate-900 placeholder:text-gray-400 focus-visible:bg-white"
@@ -107,6 +142,7 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Postcode *</label>
                     <Input
+                        name="postcode"
                         placeholder="Enter postcode"
                         required
                         className="bg-gray-50 border-gray-200 text-slate-900 placeholder:text-gray-400 focus-visible:bg-white"
@@ -124,6 +160,7 @@ export default function CareerForm() {
                     </div>
                     <div className="col-span-2">
                         <Input
+                            name="phone"
                             placeholder="Phone"
                             type="tel"
                             required
@@ -135,6 +172,7 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</label>
                     <Input
+                        name="email"
                         type="email"
                         placeholder="Enter your email"
                         required
@@ -145,6 +183,7 @@ export default function CareerForm() {
                 <div className="space-y-2">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Subject</label>
                     <Input
+                        name="subject"
                         placeholder="Subject"
                         className="bg-gray-50 border-gray-200 text-slate-900 placeholder:text-gray-400 focus-visible:bg-white"
                     />
@@ -163,6 +202,7 @@ export default function CareerForm() {
                 </div>
 
                 <Textarea
+                    name="message"
                     label="Your Message"
                     placeholder="Tell us about yourself..."
                     className="bg-gray-50 border-gray-200 text-slate-900 placeholder:text-gray-400 focus-visible:bg-white min-h-[120px]"

@@ -6,7 +6,7 @@ import FadeIn from '@/components/FadeIn';
 
 export default function VisionMission() {
     return (
-        <section className="py-24 bg-white">
+        <section className="py-12 md:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <FadeIn>
                     <div className="text-center mb-16">
@@ -45,7 +45,7 @@ export default function VisionMission() {
                     {/* Values */}
                     <FadeIn delay={0.4} className="h-full">
                         <Card className="p-8 md:p-10 h-full flex flex-col items-start bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow rounded-[2rem]">
-                            <div className="w-16 h-16 rounded-2xl bg-navy/5 flex items-center justify-center mb-8 text-navy">
+                            <div className="w-16 h-16 rounded-2xl bg-orange/10 flex items-center justify-center mb-8 text-orange">
                                 <Award className="w-8 h-8" />
                             </div>
                             <h3 className="text-2xl font-bold text-navy mb-4">Our Values</h3>

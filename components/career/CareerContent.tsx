@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Users, TrendingUp, Lightbulb } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function CareerContent() {
     const benefits = [
@@ -75,7 +76,7 @@ export default function CareerContent() {
             </motion.div>
 
             {/* 3D Decorative Element Placeholder - keeping it subtle as per request */}
-            <div className="relative h-40 w-full overflow-hidden rounded-2xl bg-gradient-to-br from-navy to-slate-900 mt-8 hidden md:block group">
+            <Link href="/contact" className="block relative h-40 w-full overflow-hidden rounded-2xl bg-gradient-to-br from-navy to-slate-900 mt-8 hidden md:block group cursor-pointer">
                 <div className="absolute inset-0 opacity-20" style={{
                     backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)',
                     backgroundSize: '20px 20px'
@@ -83,11 +84,11 @@ export default function CareerContent() {
                 <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-orange/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div className="absolute -left-10 -top-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-white/80 font-bold tracking-widest uppercase text-sm border border-white/20 px-4 py-2 rounded-full backdrop-blur-sm">
+                    <span className="text-white/80 font-bold tracking-widest uppercase text-sm border border-white/20 px-4 py-2 rounded-full backdrop-blur-sm group-hover:bg-white/10 transition-colors">
                         Join Our Vision
                     </span>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 }

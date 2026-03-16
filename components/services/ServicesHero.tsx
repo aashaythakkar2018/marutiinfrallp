@@ -72,7 +72,7 @@ export default function ServicesHero() {
                     className="w-full h-full relative"
                 >
                     <Image
-                        src="/images/factory-interior.png" // Fallback to existing asset if needed
+                        src="/images/services-new-hero.jpg" // Updated to the new uploaded image
                         alt="Steel structure manufacturing"
                         fill
                         className="object-cover"

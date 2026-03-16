@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function FinalCTA() {
     return (
-        <section className="py-24 relative overflow-hidden bg-[#1A3A5D]">
+        <section className="py-12 md:py-16 relative overflow-hidden bg-[#1A3A5D]">
             <div className="max-w-4xl mx-auto px-6 relative z-10 text-center text-white">
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}

@@ -52,7 +52,7 @@ export default function ServiceCards() {
                 {/* Sticky Left Content */}
                 <div className="lg:h-screen lg:sticky lg:top-0 flex flex-col justify-center py-12">
                     <FadeIn>
-                        <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-8 text-black leading-[1.1]">
+                        <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-black leading-[1.1]">
                             Solutions that <br />
                             <span className="text-gray-400">fit your needs.</span>
                         </h2>

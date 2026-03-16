@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function FacilitySection() {
     return (
-        <section className="py-24 bg-navy text-white relative overflow-hidden">
+        <section className="py-12 md:py-16 bg-navy text-white relative overflow-hidden">
             {/* Background Image Placeholder */}
             <div className="absolute inset-0 z-0 opacity-20 bg-[url('/grid-pattern.svg')] bg-cover" />
 

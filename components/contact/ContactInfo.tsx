@@ -83,11 +83,11 @@ export default function ContactInfo() {
                     <div>
                         <h3 className="text-xl font-bold text-navy mb-2">Phone & Email</h3>
                         <div className="space-y-2">
-                            <a href="tel:+919876543210" className="block text-slate-600 hover:text-navy transition-colors">
-                                +91 98765 43210
+                            <a href="tel:+919998053911" className="block text-slate-600 hover:text-navy transition-colors">
+                                +91 99980 53911
                             </a>
-                            <a href="mailto:info@marutiinfra.com" className="block text-slate-600 hover:text-navy transition-colors">
-                                info@marutiinfra.com
+                            <a href="mailto:info@marutiinfraeng.co.in" className="block text-slate-600 hover:text-navy transition-colors">
+                                info@marutiinfraeng.co.in
                             </a>
                         </div>
                     </div>

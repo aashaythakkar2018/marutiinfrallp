@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "Building the backbone of modern industry with world-class steel solutions.",
     type: "website",
     locale: "en_IN",
-    url: "https://marutiinfraengllp.co.in",
+    url: "https://maruti-infra-app-aashay-thakkars-projects-c3309a12.vercel.app",
   }
 };
 

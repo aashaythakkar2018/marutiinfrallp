@@ -17,7 +17,7 @@ export default function AboutPage() {
             <AboutHero />
 
             {/* Intro Text Section */}
-            <section className="py-24 md:py-32 px-6 max-w-4xl mx-auto text-center" id="intro">
+            <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto text-center" id="intro">
                 <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed text-navy font-light">
                     Maruti Infraeng LLP is a premier provider specializing in <strong className="font-semibold text-orange">Pre-Engineered Metal Building Systems (PEB)</strong>, offering comprehensive solutions from design to execution.
                 </p>

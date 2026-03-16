@@ -8,30 +8,25 @@ const steps = [
         icon: <Lightbulb className="w-8 h-8" />,
         title: "Consultation & Planning",
         description: "We analyze your requirements to define structural needs, optimizing cost and efficiency from day one.",
-        cols: "md:col-span-2",
-        bg: "bg-white"
+        cols: "md:col-span-2"
     },
     {
         icon: <PenTool className="w-8 h-8" />,
         title: "Design & Engineering",
         description: "Advanced 3D modeling and structural analysis to ensure safety standards and precise fabrication.",
-        cols: "md:col-span-1",
-        bg: "bg-gray-50",
-        dark: true
+        cols: "md:col-span-1"
     },
     {
         icon: <Factory className="w-8 h-8" />,
         title: "Fabrication",
         description: "State-of-the-art manufacturing with automated machinery ensuring millimeter-level precision.",
-        cols: "md:col-span-1",
-        bg: "bg-gray-50"
+        cols: "md:col-span-1"
     },
     {
         icon: <ShieldCheck className="w-8 h-8" />,
         title: "Erection & Handover",
         description: "Safe and swift on-site installation by our expert teams, delivering turnkey projects on schedule.",
-        cols: "md:col-span-2",
-        bg: "bg-white"
+        cols: "md:col-span-2"
     }
 ];
 
@@ -52,18 +47,18 @@ export default function ProcessFlow() {
                 <div className="grid md:grid-cols-3 gap-6 auto-rows-fr">
                     {steps.map((step, idx) => (
                         <FadeIn key={idx} delay={idx * 0.1} className={`${step.cols}`}>
-                            <div className={`${step.bg} h-full p-8 rounded-3xl border border-gray-100 hover:border-secondary/30 transition-all hover:shadow-lg group flex flex-col justify-between`}>
+                            <div className={`bg-card-dark h-full p-8 rounded-3xl border border-white/5 hover:border-secondary/50 transition-all hover:shadow-[0_0_30px_rgba(30,58,138,0.15)] group flex flex-col justify-between`}>
                                 <div>
-                                    <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 group-hover:bg-secondary/20 transition-all duration-300">
                                         {step.icon}
                                     </div>
-                                    <h3 className="text-2xl font-bold text-black mb-4">{step.title}</h3>
-                                    <p className="text-gray-500 leading-relaxed font-medium">
+                                    <h3 className="text-2xl font-bold !text-white mb-4">{step.title}</h3>
+                                    <p className="text-slate-300 leading-relaxed font-medium">
                                         {step.description}
                                     </p>
                                 </div>
                                 <div className="mt-8 flex justify-end">
-                                    <span className="text-6xl font-black text-gray-100 group-hover:text-secondary/5 transition-colors select-none">
+                                    <span className="text-4xl md:text-6xl font-black text-white/20 group-hover:text-secondary/50 transition-colors select-none">
                                         0{idx + 1}
                                     </span>
                                 </div>
