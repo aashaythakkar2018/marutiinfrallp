@@ -1,7 +1,8 @@
 "use client";
 
 import { Card } from '@/components/ui/card';
-import { Target, Flag, Award } from 'lucide-react';
+import { Compass, HardHat, Ruler } from 'lucide-react';
+import { motion } from 'framer-motion';
 import FadeIn from '@/components/FadeIn';
 
 export default function VisionMission() {
@@ -20,7 +21,12 @@ export default function VisionMission() {
                     <FadeIn delay={0.2} className="h-full">
                         <Card className="p-8 md:p-10 h-full flex flex-col items-start bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow rounded-[2rem]">
                             <div className="w-16 h-16 rounded-2xl bg-orange/10 flex items-center justify-center mb-8 text-orange">
-                                <Target className="w-8 h-8" />
+                                <motion.div
+                                    animate={{ rotate: 360 }}
+                                    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                                >
+                                    <Compass className="w-8 h-8" />
+                                </motion.div>
                             </div>
                             <h3 className="text-2xl font-bold text-navy mb-4">Our Vision</h3>
                             <p className="text-gray-600 leading-relaxed">
@@ -33,7 +39,12 @@ export default function VisionMission() {
                     <FadeIn delay={0.3} className="h-full">
                         <Card className="p-8 md:p-10 h-full flex flex-col items-start bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow rounded-[2rem]">
                             <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mb-8 text-secondary">
-                                <Flag className="w-8 h-8" />
+                                <motion.div
+                                    animate={{ y: [0, -5, 0], rotate: [0, -10, 10, 0] }}
+                                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                >
+                                    <HardHat className="w-8 h-8" />
+                                </motion.div>
                             </div>
                             <h3 className="text-2xl font-bold text-navy mb-4">Our Mission</h3>
                             <p className="text-gray-600 leading-relaxed">
@@ -46,7 +57,12 @@ export default function VisionMission() {
                     <FadeIn delay={0.4} className="h-full">
                         <Card className="p-8 md:p-10 h-full flex flex-col items-start bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow rounded-[2rem]">
                             <div className="w-16 h-16 rounded-2xl bg-orange/10 flex items-center justify-center mb-8 text-orange">
-                                <Award className="w-8 h-8" />
+                                <motion.div
+                                    animate={{ scale: [1, 1.1, 1], rotate: [0, -5, 5, 0] }}
+                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                >
+                                    <Ruler className="w-8 h-8" />
+                                </motion.div>
                             </div>
                             <h3 className="text-2xl font-bold text-navy mb-4">Our Values</h3>
                             <p className="text-gray-600 leading-relaxed">

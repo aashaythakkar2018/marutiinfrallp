@@ -30,9 +30,6 @@ const completeSolutionImages = [
     "/COMPLETE SOLUTIONS/7.png",
     "/COMPLETE SOLUTIONS/8.png",
     "/COMPLETE SOLUTIONS/9.png",
-    "/COMPLETE SOLUTIONS/10.png",
-    "/COMPLETE SOLUTIONS/11.png",
-    "/COMPLETE SOLUTIONS/12.png",
     "/COMPLETE SOLUTIONS/13.png",
     "/COMPLETE SOLUTIONS/14.jpeg",
 ]
@@ -99,6 +96,8 @@ export default function Gallery() {
                                         src={src}
                                         alt={`Complete Solution ${idx + 1}`}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        quality={100}
                                         className="object-cover transition-transform duration-700 group-hover:scale-110 relative z-10"
                                         loading="lazy"
                                     />
@@ -127,6 +126,8 @@ export default function Gallery() {
                                         src={src}
                                         alt={`Project ${idx + 1}`}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        quality={100}
                                         className="object-cover transition-transform duration-700 group-hover:scale-110 relative z-10"
                                         loading="lazy"
                                     />
@@ -155,6 +156,8 @@ export default function Gallery() {
                                         src={src}
                                         alt={`Structured Steel ${idx + 1}`}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        quality={100}
                                         className="object-cover transition-transform duration-700 group-hover:scale-110 relative z-10"
                                         loading="lazy"
                                     />

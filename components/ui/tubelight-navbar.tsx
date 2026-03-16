@@ -41,7 +41,7 @@ export function NavBar({ items, className }: NavBarProps) {
     return (
         <div
             className={cn(
-                "fixed bottom-0 sm:bottom-auto sm:top-0 left-1/2 -translate-x-1/2 z-50 sm:pt-6 w-full max-w-[100vw] px-4 sm:px-0 sm:w-auto pb-6 sm:pb-0",
+                "fixed bottom-0 sm:bottom-auto sm:top-0 left-1/2 -translate-x-1/2 z-50 sm:h-24 sm:flex sm:items-center w-full max-w-[100vw] px-4 sm:px-0 sm:w-auto pb-6 sm:pb-0",
                 className,
             )}
         >

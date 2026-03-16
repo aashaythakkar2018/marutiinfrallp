@@ -13,7 +13,7 @@ export default function FacilitySection() {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
                     <span className="text-white/50 tracking-wider uppercase">Our Headquarters</span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-2">Where Innovation Meets Precision</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mt-2" style={{ color: 'white' }}>Where Innovation Meets Precision</h2>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -37,7 +37,7 @@ export default function FacilitySection() {
                             <span className="text-white/70 font-medium">Gujarat, India</span>
                         </div>
 
-                        <h3 className="text-3xl md:text-4xl font-bold mb-2">Surat, Gujarat</h3>
+                        <h3 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: 'white' }}>Surat, Gujarat</h3>
                         <p className="text-lg text-white/60 mb-8">Manufacturing Hub & Headquarters</p>
 
                         <p className="text-gray-300 leading-relaxed mb-8">

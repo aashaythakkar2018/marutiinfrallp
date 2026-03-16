@@ -12,7 +12,7 @@ const services = [
         id: "01",
         title: "Pre-Engineered Buildings",
         description: "Complete turnkey solutions for industrial sheds, warehouses, and factories designed for durability and speed.",
-        image: "/PROJECTS/7.png",
+        image: "/PROJECTS/7.jpeg",
         link: "/peb"
     },
     {
@@ -26,7 +26,7 @@ const services = [
         id: "03",
         title: "Industrial Roofing",
         description: "High-performance roofing systems ensuring leak-proof and weather-resistant protection for your assets.",
-        image: "/PROJECTS/8.png",
+        image: "/PROJECTS/8.jpeg",
         link: "/services"
     },
     {

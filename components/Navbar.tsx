@@ -24,14 +24,14 @@ export default function Navbar() {
             <div className="fixed top-0 left-0 right-0 h-24 bg-white/90 backdrop-blur-md shadow-sm z-40 border-b border-slate-100" />
 
             {/* Logo - Fixed Top Left */}
-            <div className="fixed top-2 left-6 z-50">
+            <div className="fixed top-0 left-6 h-24 flex items-center z-50">
                 <Link href="/" className="block">
                     <NextImage
                         src="/images/Lof with tag line.png"
                         alt="Maruti Infra Engineering"
                         width={240}
                         height={120}
-                        className="h-28 w-auto object-contain"
+                        className="h-20 w-auto object-contain"
                     />
                 </Link>
             </div>
@@ -40,7 +40,7 @@ export default function Navbar() {
             <NavBar items={navItems} className="z-50" />
 
             {/* Get Quote Button - Fixed Top Right */}
-            <div className="fixed top-6 right-6 z-50">
+            <div className="fixed top-0 right-6 h-24 flex items-center z-50">
                 <Link href="/contact">
                     <Button
                         className="rounded-full px-6 bg-orange hover:bg-orange-dark text-white shadow-lg shadow-orange/20 border-none text-sm hidden sm:flex"
