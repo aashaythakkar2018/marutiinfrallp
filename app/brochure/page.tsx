@@ -25,7 +25,7 @@ export default function Brochure() {
                                 Comprehensive overview of our company, vision, services, and major project portfolio.
                             </p>
                             <a
-                                href="/brochure.pdf"
+                                href="/Maruti%20Infra%20Brochure%20updated.pdf"
                                 download="Maruti_Infra_Brochure.pdf"
                                 className="px-10 py-4 bg-navy text-white text-lg rounded-xl font-semibold hover:bg-navy/90 transition-all flex items-center gap-3 shadow-lg shadow-navy/20 hover:shadow-navy/40 hover:-translate-y-1"
                             >
