@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { MapPin, Phone, Clock, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 

@@ -58,7 +58,7 @@ export default function CoreServices() {
     return (
         <section className="py-24 px-6 md:px-10 bg-white">
             <div className="max-w-[1200px] mx-auto flex flex-col gap-20 md:gap-32">
-                {services.map((service, index) => (
+                {services.map((service) => (
                     <motion.div
                         key={service.id}
                         initial={{ opacity: 0, y: 60 }}
