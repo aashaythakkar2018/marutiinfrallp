@@ -23,6 +23,11 @@ export const metadata: Metadata = {
   title: "Maruti Infra Engineering LLP | Premium PEB & Structural Steel Solutions",
   description: "Leading manufacturer of Pre-Engineered Buildings (PEB) and heavy structural steel in Gujarat, India. Delivering excellence in industrial infrastructure with speed and precision.",
   keywords: ["PEB", "Pre-Engineered Buildings", "Structural Steel", "Industrial Sheds", "Turnkey Projects", "Maruti Infra", "Gujarat", "India"],
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+    shortcut: "/favicon.png",
+  },
   openGraph: {
     title: "Maruti Infra Engineering LLP",
     description: "Building the backbone of modern industry with world-class steel solutions.",
