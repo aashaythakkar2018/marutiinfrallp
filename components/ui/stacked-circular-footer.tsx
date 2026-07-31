@@ -31,6 +31,7 @@ function StackedCircularFooter() {
                         <Link href="/peb" className="hover:text-navy transition-colors">PEB</Link>
                         <Link href="/gallery" className="col-span-2 sm:col-span-1 hover:text-navy transition-colors">Gallery</Link>
                         <Link href="/career" className="hover:text-navy transition-colors">Career</Link>
+                        <Link href="/blog" className="hover:text-navy transition-colors">Blog</Link>
                         <Link href="/contact" className="hover:text-navy transition-colors">Contact</Link>
                     </nav>
 
