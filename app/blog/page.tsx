@@ -28,83 +28,47 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "post-1",
-    title: "The Evolution of Pre-Engineered Buildings (PEB) in Modern Industrial Infrastructure",
+    title: "PEB Manufacturer in India: A Beginner’s Guide to Pre-Engineered Buildings",
     category: "PEB Tech",
-    summary: "Discover how Pre-Engineered Buildings are transforming industrial architecture with rapid deployment, cost efficiency, and unprecedented design flexibility.",
-    image: "/images/company-aerial-view.jpg",
-    date: "July 28, 2026",
-    readTime: "5 min read",
-    author: "Amit Patel (Director)",
+    summary: "For companies planning expansion or setting up new infrastructure, choosing the right PEB Manufacturer in India has become a strategic decision. Read our beginner's guide to Pre-Engineered Buildings.",
+    image: "/images/factory-interior.png",
+    date: "August 6, 2026",
+    readTime: "6 min read",
+    author: "Maruti InfraENG LLP",
     featured: true,
     content: [
-      "Pre-Engineered Buildings (PEB) have completely revolutionized industrial infrastructure development. Traditionally, building a manufacturing plant, warehouse, or distribution center took years of coordinate design, structural steel sourcing, onsite fabrication, and extensive welding. PEB systems bypass these bottlenecks through intelligent off-site pre-fabrication.",
-      "At Maruti Infra Engineering, our design and engineering phase uses modern software tools to optimize steel consumption. By tailoring sections to the precise stress profiles of the structure, we reduce load and save materials. Once designed, the primary structural frames, purlins, and cladding are fabricated under controlled factory conditions in our Surat plant.",
-      "The result is a structure that arrives on site ready to bolt together. Erection time is slashed by up to 50% compared to conventional concrete or traditional structural steel methods. Furthermore, PEB structures allow for vast clear spans of up to 90 meters without internal columns, maximizing storage and assembly line efficiency.",
-      "In this era of rapid e-commerce expansion and high-capacity manufacturing, PEB is no longer just an alternative; it is the industry standard for agile, strong, and highly customizable structural infrastructure."
+      "Walk through any modern industrial zone today and you’ll notice a silent transformation. Warehouses are rising faster, factories look more streamlined, and commercial spaces are becoming more efficient in both design and execution. This shift is not accidental—it reflects a growing preference for smarter construction methods that align with business speed and scalability.",
+      "At the center of this evolution are Pre-Engineered Buildings (PEBs). For companies planning expansion or setting up new infrastructure, choosing the right PEB Manufacturer in India has become a strategic decision rather than just a vendor selection. From logistics hubs to industrial plants and commercial spaces, PEBs are offering a balance of speed, durability, and cost efficiency that traditional construction methods often struggle to deliver.",
+      "For someone new to the concept, PEBs might seem technical, but the idea is simple—build better, build faster, and build with precision. Understanding how they work and why they are gaining traction can help businesses make more informed decisions for long-term growth.",
+      "Pre-Engineered Buildings are structures designed and manufactured using steel components that are fabricated in a controlled factory environment and assembled at the project site. Unlike conventional construction, where everything is built on-site, PEBs follow a planned and engineered process that minimizes uncertainty and improves efficiency.",
+      "Each component—columns, beams, roofing systems—is designed with accuracy using advanced software. Once manufactured, these components are transported and installed quickly, ensuring faster project completion without compromising on quality.",
+      "The increasing demand for a reliable PEB Manufacturer in India is directly linked to changing business needs. Today, industries operate in highly competitive environments where delays in infrastructure can slow down operations and impact revenue. PEBs offer a practical solution to these challenges by focusing on efficiency and scalability. Businesses are choosing this method because it aligns with their need for faster execution and predictable outcomes.",
+      "Traditional construction methods, while familiar, often present limitations in today’s fast-paced environment. Projects can face delays due to weather conditions, labor shortages, or on-site inefficiencies. In addition, maintaining consistent quality across different phases of construction becomes challenging. As architect Frank Lloyd Wright once said, 'An idea is salvation by imagination.' The need for a smarter and more reliable construction approach led to the rise of Pre-Engineered Buildings. For companies aiming to expand quickly, delays are not just inconvenient—they can result in missed opportunities. This is where PEBs provide a clear advantage by offering a streamlined and predictable construction process.",
+      "A professional PEB Manufacturer in India plays a crucial role in transforming project execution. Instead of just supplying materials, they provide complete engineered solutions that address the limitations of traditional construction. Their approach focuses on efficiency, precision, and integration across all stages of the project. This end-to-end approach minimizes delays, reduces errors, and ensures that projects are completed within defined timelines and budgets.",
+      "Among the leading players in this space, Maruti InfraENG LLP has emerged as a next-generation steel infrastructure solutions company. Recognized among the top steel construction companies in India, Maruti InfraENG LLP has built its reputation on delivering high-quality, reliable, and efficient structures. The company specializes in designing, manufacturing, and supplying both light and heavy complex steel structures using advanced techniques and global standards. Their team of highly skilled engineers uses modern software to ensure accuracy in design and detailing. This focus on precision allows them to create buildings that are structurally strong while also maintaining a refined and functional design."
     ]
   },
   {
     id: "post-2",
-    title: "Advanced Structural Steel Design: Leveraging Software for Precision Engineering",
-    category: "Design & Planning",
-    summary: "How modern CAD/BIM applications and structural analysis software ensure precision, load distribution, and wind resistance in heavy steel structures.",
-    image: "/images/core-design.jpg",
-    date: "July 15, 2026",
-    readTime: "6 min read",
-    author: "Rohan Vyas (Lead Structural Engineer)",
-    content: [
-      "Safety in industrial buildings starts on the screen. Pre-Engineered Buildings and structural steel skeletons are subjected to tremendous dynamic forces: heavy wind velocities, seismic activities, crane loads, and temperature shifts. Designing for these forces requires state-of-the-art computational analysis.",
-      "Our engineering team relies on world-class analysis suites like STAAD.Pro and Tekla Structures. These platforms allow us to create 3D virtual models of the buildings and run stress simulations. We test extreme weather events and dynamic load shifting to ensure that columns, rafter sections, anchor bolts, and bracing structures hold firm.",
-      "BIM (Building Information Modeling) integration ensures that there is zero mismatch between structural design and utility routing. When the fabricated beams arrive on-site, they fit perfectly with pre-cast concrete columns and anchor grids. This precision engineering reduces field modifications, prevents delays, and ensures that the structural integrity matches theoretical design to a millimeter.",
-      "Ultimately, investing in advanced software-based design processes upfront saves material costs by avoiding over-engineering while upholding the highest level of safety and structural longevity."
-    ]
-  },
-  {
-    id: "post-3",
-    title: "Inside Our Surat Fabrication Facility: Quality Standards & Manufacturing Excellence",
+    title: "Top Industries That Rely on a PEB Manufacturer in India",
     category: "Manufacturing",
-    summary: "A sneak peek into Maruti Infra's state-of-the-art Surat fabrication plant, showcasing automated line cuts, welding systems, and rigorous quality check protocols.",
-    image: "/images/factory-interior.png",
-    date: "June 30, 2026",
-    readTime: "4 min read",
-    author: "Sanjay Shah (Plant Manager)",
-    content: [
-      "While designs are made in the office, the real metal of a building is forged in the fabrication facility. In Surat, Maruti Infra operates a massive, automated fabrication plant. Here, raw steel plates are converted into high-load built-up sections, columns, and rafters.",
-      "The fabrication line begins with CNC plasma cutting, ensuring plates are sliced to exact dimensions with perfect edge finishes. Next, plates are aligned and run through automated submerged arc welding (SAW) machines. Automating the welding process produces uniform, deep-penetration welds that are free from slag inclusions, ensuring unmatched structural strength.",
-      "Every weld undergoes non-destructive testing (NDT), including ultrasonic and dye-penetrant checks. Following fabrication, components are shot-blasted to remove rust and scale, creating a clean profile for paint adhesion. A high-durability epoxy primer is applied, followed by protective finish coats to guard against corrosion in humid industrial climates.",
-      "Maintaining these strict manufacturing standards ensures that every Maruti Infra column and beam performs perfectly under load, withstanding decades of harsh industrial environments."
-    ]
-  },
-  {
-    id: "post-4",
-    title: "Best Practices for Site Execution and Erection of Large-Scale Pre-Engineered Buildings",
-    category: "Site Execution",
-    summary: "Safe erection of heavy metal structures requires rigorous coordination, high safety standards, and specialized machinery. Explore our proven execution roadmap.",
-    image: "/images/visionary-planning.jpg",
-    date: "June 12, 2026",
+    summary: "Explore how warehousing, manufacturing, retail commercial developments, infrastructure, and defense sectors leverage Pre-Engineered Buildings for rapid expansion.",
+    image: "/images/company-aerial-view.jpg",
+    date: "August 6, 2026",
     readTime: "7 min read",
-    author: "Karan Desai (Projects Head)",
+    author: "Maruti InfraENG LLP",
     content: [
-      "Even the best-designed and fabricated PEB parts will fail if the site execution is flawed. Erection is the phase where heavy steel sections, sometimes weighing several tons, are lifted and secured high above the ground. It is an exercise in engineering coordination and safety discipline.",
-      "Maruti Infra's erection methodology follows a strict step-by-step blueprint. First, foundation anchor bolts are verified for alignment. Next, the first bay (usually the most braced bay) is erected and completely tightened. This acts as the anchor point for the rest of the building.",
-      "Rigging plans, crane capacities, and wind monitoring are checked daily. Workers on-site use mandatory fall-protection harnesses, safety nets, and temporary guy wires to stabilize frames during assembly. Specialized high-strength bolts are torqued using calibrated impact wrenches to ensure the connections behave as design equations predicted.",
-      "By sticking to these rigid site guidelines, we maintain an accident-free record and ensure that structures are built safely, quickly, and to specification."
-    ]
-  },
-  {
-    id: "post-5",
-    title: "Sustainable Infrastructure: Steel as the Future of Eco-Friendly Construction",
-    category: "Sustainability",
-    summary: "Steel is one of the most recycled materials globally. Learn how Pre-Engineered Buildings contribute to green certifications and reduce environmental footprints.",
-    image: "/images/facility-aerial.jpg",
-    date: "May 25, 2026",
-    readTime: "5 min read",
-    author: "Dr. Alok Mehta (Sustainability Adviser)",
-    content: [
-      "As environmental regulations tighten and corporate social responsibility grows, green building has become a necessity. Steel plays a central role in this shift. Unlike concrete, structural steel is 100% recyclable, meaning it can be melted down and reused indefinitely without losing strength.",
-      "Pre-Engineered Buildings are particularly eco-friendly. Since every component is pre-cut and fabricated in a factory, raw material waste is almost completely eliminated. Erection on-site is dry, requiring minimal water consumption and generating virtually no dust pollution or debris compared to traditional masonry.",
-      "Additionally, PEB systems are highly compatible with energy-efficient insulation materials. High R-value glass wool insulations, double-skin roof panels, and natural skylights reduce the cooling and lighting loads of industrial buildings, lowering their lifetime carbon footprints.",
-      "By selecting a PEB solution, industries not only save time and money but also make a direct investment in sustainable, recyclable, and energy-efficient building infrastructure."
+      "India’s infrastructure sector is undergoing a major transformation. With industries expanding rapidly and timelines becoming tighter, the need for faster, more efficient construction methods has never been greater. This shift has led to the rising demand for a PEB Manufacturer in India, as Pre-Engineered Buildings (PEBs) offer a modern solution to traditional construction challenges.",
+      "Unlike conventional methods, PEBs are designed, fabricated, and partially assembled in controlled factory environments before being transported to the site for quick installation. This approach significantly reduces construction time, minimizes material wastage, and ensures consistent quality. Today, businesses are not just looking for buildings—they are looking for smart infrastructure that supports growth, flexibility, and long-term performance.",
+      "A reliable PEB Manufacturer in India plays a crucial role in helping industries meet these expectations. By combining advanced engineering, precision manufacturing, and efficient execution, PEB providers enable companies to build infrastructure that aligns with modern operational needs.",
+      "1. Warehousing and Logistics: The rapid growth of e-commerce and organized retail has significantly increased the demand for modern warehousing facilities. Logistics companies require large, open spaces that can accommodate bulk storage and ensure smooth movement of goods. Key benefits include large column-free spans for efficient storage, faster construction, and flexibility for expansion.",
+      "2. Manufacturing and Industrial Units: Manufacturing industries require robust infrastructure that can support heavy machinery, continuous operations, and future expansion. Key advantages include high load-bearing capacity for machinery, custom layouts to optimize production flow, crane integration, and reduced maintenance costs over time.",
+      "3. Commercial and Retail Spaces: Modern commercial developments demand a combination of functionality and visual appeal. A PEB Manufacturer in India enables developers to achieve this balance by offering flexible design options and faster project completion. Shopping malls, showrooms, and office complexes are increasingly adopting PEB solutions.",
+      "4. Infrastructure and Government Projects: Common applications include airport terminals, railway stations, metro depots, exhibition centers, and industrial corridors. The ability to deliver projects on time makes PEBs a preferred choice for government and infrastructure developments.",
+      "5. Agriculture and Food Processing: The agriculture sector is adopting modern infrastructure like grain storage warehouses, cold storage facilities, poultry/dairy sheds, and food processing units. PEBs help enhance productivity and support organized agricultural operations.",
+      "6. Energy and Power Sector: PEBs are widely used for solar equipment manufacturing units, power plant structures, utility buildings, and equipment storage facilities, designed to withstand challenging environmental conditions.",
+      "7. Aviation and Defense: Highly specialized structures such as aircraft hangars, defense storage units, training facilities, and operational buildings are built using customized PEB solutions meeting strict engineering and safety standards.",
+      "Maruti InfraENG LLP stands out as a trusted name in this space. As a next-generation steel infrastructure solutions company, it specializes in designing, manufacturing, and installing Pre-Engineered Buildings and structural steel, ensuring that every project meets industry standards and client expectations."
     ]
   }
 ];
