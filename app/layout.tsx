@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
   title: "Maruti Infra Engineering LLP | Premium PEB & Structural Steel Solutions",
   description: "Leading manufacturer of Pre-Engineered Buildings (PEB) and heavy structural steel in Gujarat, India. Delivering excellence in industrial infrastructure with speed and precision.",
   keywords: ["PEB", "Pre-Engineered Buildings", "Structural Steel", "Industrial Sheds", "Turnkey Projects", "Maruti Infra", "Gujarat", "India"],
+  verification: {
+    google: "-JxH088o9vX52lpujheKTnC_bvGm5wxuR-3zOsv42JY",
+  },
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
@@ -44,6 +48,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="-JxH088o9vX52lpujheKTnC_bvGm5wxuR-3zOsv42JY" />
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-KCZ5QQ7EGJ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KCZ5QQ7EGJ');
+          `}
+        </Script>
+      </head>
       <body
         className={`${outfit.variable} ${geistMono.variable} antialiased`}
       >
@@ -52,3 +73,4 @@ export default function RootLayout({
     </html>
   );
 }
+
